@@ -31,9 +31,10 @@ int[] studentScores = new int[10];
 
 string currentStudentLetterGrade = "";
 
+
 // display the header row for scores/grades
 Console.Clear();
-Console.WriteLine("Student\t\tGrade\tLetter Grade\n");
+Console.WriteLine("Student\t\tExam Score\tOverall Grade\tExtra Credit\n");
 
 /*
 The outer foreach loop is used to:
@@ -46,18 +47,25 @@ The outer foreach loop is used to:
 foreach (string name in studentNames)
 {
     string currentStudent = name;
+    int examScores = 0;
+    int extraCredit = 0;
 
     if (currentStudent == "Sophia")
         studentScores = sophiaScores;
+        examScores = examScores;
+        extraCredit = extraCredit;
 
     else if (currentStudent == "Andrew")
         studentScores = andrewScores;
+       
 
     else if (currentStudent == "Emma")
         studentScores = emmaScores;
+        
 
     else if (currentStudent == "Logan")
         studentScores = loganScores;
+      
 
     int sumAssignmentScores = 0;
 
