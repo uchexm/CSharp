@@ -306,9 +306,9 @@ do
             // Edit an animal’s personality description");
             Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
             Console.WriteLine("Press the Enter key to continue.");
-            readResult = Console.ReadLine();
+            readResult = Console.ReadLine(hello);
             break;
-        
+
         case "7":
             // Display all cats with a specified characteristic
             Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
